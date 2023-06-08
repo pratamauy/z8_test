@@ -4,8 +4,8 @@ class veraPage {
         return $('body > nav > div > ul:nth-child(2) > li:nth-child(1)');
     }
     
-    open() {
-        return browser.newWindow(`http://phmvera.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmvera.pertamina.com/`);
     }
 }
 

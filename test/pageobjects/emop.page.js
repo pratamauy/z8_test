@@ -4,8 +4,8 @@ class emopPage {
         return $('#tool-1017');
     }
 
-    open() {
-        return browser.newWindow(`http://phmemop.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmemop.pertamina.com/`);
     }
 }
 

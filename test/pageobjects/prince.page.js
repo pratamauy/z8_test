@@ -4,8 +4,8 @@ class princePage {
         return $('body > div.page-header.navbar.navbar-fixed-top > div > div.top-menu > ul > li');
     }
 
-    open() {
-        return browser.newWindow(`http://phmprince.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmprince.pertamina.com/`);
     }
 }
 

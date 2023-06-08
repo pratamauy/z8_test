@@ -4,8 +4,8 @@ class mahakamPage {
         return $('#phm_header > div > div.phm-container > div.dropdown');
     }
 
-    open() {
-        return browser.url(`http://mahakamnet.pertamina.com/`);
+    open(username, password) {
+        return browser.url(`http://`+username+`:`+password+`@mahakamnet.pertamina.com/`);
     }
 }
 

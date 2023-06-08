@@ -4,8 +4,8 @@ class precisePage {
         return $('body > div.container.body > div > div.top_nav > div > nav > ul');
     }
 
-    open() {
-        return browser.newWindow(`http://phmprecise.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmprecise.pertamina.com/`);
     }
 }
 

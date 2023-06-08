@@ -4,8 +4,8 @@ class everestPage {
         return $('#phm_header > div > div.phm-container > div.dropdown');
     }
 
-    open() {
-        return browser.newWindow(`http://phmeverest.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmeverest.pertamina.com/`);
     }
 }
 

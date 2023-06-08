@@ -4,8 +4,8 @@ class dailyPage {
         return $('#O365_MainLink_Me');
     }
     
-    open () {
-        return browser.newWindow(`http://phmsp-dailynews.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmsp-dailynews.pertamina.com/`);
     }
 }
 

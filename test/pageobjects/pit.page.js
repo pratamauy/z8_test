@@ -4,8 +4,8 @@ class pitPage {
         return $('body > div.wrapper > header > nav > div > ul > li');
     }
 
-    open() {
-        return browser.newWindow(`http://phmbpnapwi001/PIT/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmbpnapwi001/PIT/`);
     }
 }
 

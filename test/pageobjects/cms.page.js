@@ -4,8 +4,8 @@ class cmsPage {
         return $('#O365_MainLink_Me');
     }
 
-    open() {
-        return browser.newWindow(`http://phmsp-cms.pertamina.com/`);
+    open(username, password) {
+        return browser.newWindow(`http://`+username+`:`+password+`@phmsp-cms.pertamina.com/`);
     }
 }
 
