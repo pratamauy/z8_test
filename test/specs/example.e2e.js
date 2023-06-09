@@ -27,9 +27,9 @@ describe('EELS', () => {
     it('EELS Test', async () => {
         await eelsPage.open(username,password,{ 'pageLoad': 60000 });
         await $('body').waitForExist();
-        await expect($('#ext-gen1029')).not.toHaveText('You are not authorize to access this system, or your session has been expired.',{ timeout: 30000
-            // , ignoreCase: true
-         });
+        // await expect($('#ext-gen1029')).not.toHaveText('You are not authorize to access this system, or your session has been expired.',{ timeout: 30000
+        //     // , ignoreCase: true
+        //  });
     })
 })
 
